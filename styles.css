@@ -1,0 +1,28 @@
+body {
+    font-family: Verdana;
+    margin:0;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: dodgerblue;
+  height: 3rem;
+}
+#navBar > a {
+    display: flex;
+    color: white;
+    font-size: smaller;
+    text-decoration: none;
+}
+#navBar :first-child {
+    font-size: larger;
+    margin-left: 1rem;
+}
+#navBar :nth-child(2) {
+    font-weight: bold;
+}
+#navBar :nth-child(4) {
+    margin-right: 5rem;
+}
