@@ -33,7 +33,7 @@ body > h2 {
     display: flex;
     justify-content: center;
     /* background-color: lightblue; */
-    height: 15rem;
+    height: 30%;
 }
 #formBox {
     display: flex;
@@ -57,9 +57,13 @@ body > h2 {
 }
 #formBox label {
     font-weight: bold;
-    padding-left: 1rem;
     padding-right: 1rem;
+    flex: 1;
 }
+#firstname, #lastname, #department {
+    flex: 3;
+}
+
 #formBox :nth-child(5) {
     justify-content: center;
 }
@@ -101,7 +105,12 @@ body > h2 {
         padding: 0.5rem;
     }
     #formBox {
-        width: 100vw;
+        width: Calc(100vw - 2rem);
+    }
+    #formBox > div, h2 {
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: left;
     }
     .user {
         width: 100vw;
