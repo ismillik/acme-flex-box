@@ -3,22 +3,24 @@ body {
     margin:0;
     color: slategray;
 }
+body > h2 {
+    margin-left: 1rem;
+}
 #navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: dodgerblue;
-  height: 3rem;
 }
 #navBar > a {
     display: flex;
     color: white;
     font-size: smaller;
     text-decoration: none;
+    padding: 1rem;
 }
 #navBar :first-child {
     font-size: 1.5rem;
-    margin-left: 1rem;
 }
 #navBar :nth-child(2) {
     font-weight: bold;
@@ -30,7 +32,7 @@ body {
 #formLevel {
     display: flex;
     justify-content: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     height: 15rem;
 }
 #formBox {
@@ -65,7 +67,7 @@ body {
 #usersLevel {
     display: flex;
     justify-content: flex-start;
-    background-color: yellow;
+    /* background-color: yellow; */
     flex-wrap: wrap;
     width: 100vw;
 }
@@ -84,4 +86,24 @@ body {
 .user > h4 {
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    #navBar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #navBar :nth-child(4) {
+        margin-right: 0;
+    }
+    #navBar > a {
+        padding: 0.5rem;
+    }
+    #formBox {
+        width: 100vw;
+    }
+    .user {
+        width: 100vw;
+    }
 }
