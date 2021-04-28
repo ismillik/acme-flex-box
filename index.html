@@ -6,12 +6,69 @@
     <link rel= 'stylesheet' href= 'styles.css'>
   </head>
   <body>
-    <div id= 'navBar'>
+    <div id='navBar'>
       <a href='#home'>Acme Layout</a>
       <a href='#users'>Users</a>
       <a href='#departments'>Departments</a>
       <a href='#contact'>Contact</a>
     </div>
+    <h2>Users</h2>
+    <div id='formLevel'>
+      <div id='formBox'>
+        <h2>Create A User</h2>
+        <div>
+        <label for='firstname'>First Name</label>
+        <input type='text' id='firstname' name='firstname' placeholder='Jane' style='width: 390px'>
+        </div>
+        <div>
+        <label for='lastname'>Last Name</label>
+        <input type='text' id='lastname' name='lastname' placeholder='Doe' style='width: 390px'>
+        </div>
+        <div>
+            <label for='department'>Department</label>
+            <select name='department' id='department'style='width: 400px'>
+                <option value=''> -- None -- </option>
+                <option value='dept1'>Department 1</option>
+                <option value='dept2'>Department 2</option>
+            </select>
+        </div>
+        <div>
+        <input type='button' value='Clear'>
+        <input type='button' value='Save'>
+        </div>
+      </div>
+    </div>
+    <div id='usersLevel'>
+      <div class='user'>
+          <h4>User A</h4>
+          <p>Some text for the user.</p>
+      </div>  
+      <div class='user'>
+        <h4>User A</h4>
+        <p>Some text for the user. Some text for the user. Some text for the user. Some text for the user.</p>
+      </div>
+      <div class='user'>
+        <h4>User A</h4>
+        <p>Some text for the user.</p>
+      </div>
+      <div class='user'>
+        <h4>User A</h4>
+        <p>Some text for the user.</p>
+      </div>
+      <div class='user'>
+        <h4>User A</h4>
+        <p>Some text for the user.</p>
+      </div>
+      <div class='user'>
+        <h4>User A</h4>
+        <p>Some text for the user.</p>
+      </div>
+      <div class='user'>
+        <h4>User A</h4>
+        <p>Some text for the user.</p>
+      </div>            
+    </div>
+
   </body>
 
 </html>
